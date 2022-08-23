@@ -196,7 +196,7 @@ main{
     justify-content: space-around;
     font-size: 20px;
     padding: 40px;
-    background-color: #eef20d;
+    background: linear-gradient(360deg, yellow, rgb(238, 70, 70));
 
 } 
 
@@ -209,6 +209,15 @@ main{
     padding: 20px;
 }
 
+.imagen:hover {
+    transform: rotateX(10deg);
+}
+
+.imagen2:hover {
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, .4);
+    transform: translateY(-3%);
+}
+
 .imagen2{
    
     width: 300px;
@@ -216,8 +225,6 @@ main{
     box-shadow: 0px 1px 10px rgb(0, 0, 0, 0.2);
     overflow: hidden;
     margin: 20px;
-
-
 }
 
 .imagen2 p{
@@ -230,9 +237,8 @@ main{
     font-size: 22px;
     margin-top: 80px;
     padding: 40px;
-    background-color: #eef20d;
-
-    
+    background: linear-gradient(360deg, yellow, rgb(238, 70, 70));
+   
 }
 
 /*----------------BUZO-----------*/
@@ -246,6 +252,10 @@ main{
         
 }
 
+.imagen3:hover {
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, .4);
+    transform: translateY(-3%);
+}
 
 .descripcion{
     font-size: 18px;
@@ -259,7 +269,7 @@ main{
     font-size: 22px;
     margin-top: 80px;
     padding: 40px;
-    background-color: #eef20d;
+    background: linear-gradient(360deg, yellow, rgb(238, 70, 70));
 
 }
 
@@ -316,9 +326,7 @@ main{
     font-size: 20px;
 }
 
-.colorFondo{
-    background-color: rgb(250, 200, 215);
-}
+
 .h3Pedidos{
     text-align: center;
     font-size: 40px;
@@ -348,7 +356,7 @@ border-radius: 200px;
     font-size: 22px;
     margin-top: 80px;
     padding: 40px;
-    background-color: #eef20d;
+    background: linear-gradient(360deg, yellow, rgb(238, 70, 70));
 
 }
 
