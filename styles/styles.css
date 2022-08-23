@@ -196,7 +196,7 @@ main{
     justify-content: space-around;
     font-size: 20px;
     padding: 40px;
-    background: linear-gradient(360deg, yellow, rgb(238, 70, 70));
+    background-color: #eef20d;
 
 } 
 
@@ -209,10 +209,6 @@ main{
     padding: 20px;
 }
 
-.imagen2:hover{
-    box-shadow: 5px 10px 5px rgba(0, 0, 0, .4);
-    transform: translateY(-3%);
-}
 .imagen2{
    
     width: 300px;
@@ -233,8 +229,8 @@ main{
     justify-content: space-around;
     font-size: 22px;
     margin-top: 80px;
-    background: linear-gradient(360deg, yellow, rgb(238, 70, 70));
     padding: 40px;
+    background-color: #eef20d;
 
     
 }
@@ -250,10 +246,6 @@ main{
         
 }
 
-.imagen3:hover {
-    box-shadow: 5px 10px 5px rgba(0, 0, 0, .4);
-    transform: translateY(-3%);
-}
 
 .descripcion{
     font-size: 18px;
@@ -266,8 +258,9 @@ main{
     justify-content: space-around;
     font-size: 22px;
     margin-top: 80px;
-padding: 40px;
-    background: linear-gradient(360deg, yellow, rgb(238, 70, 70));
+    padding: 40px;
+    background-color: #eef20d;
+
 }
 
 #hover:hover{
@@ -355,7 +348,8 @@ border-radius: 200px;
     font-size: 22px;
     margin-top: 80px;
     padding: 40px;
-        background: linear-gradient(360deg, yellow, rgb(238, 70, 70));
+    background-color: #eef20d;
+
 }
 
         /*------------------FOOTER--------------------*/ 
