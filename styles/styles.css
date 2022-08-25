@@ -8,17 +8,6 @@
 }
 
 /*HEADER*/
-.grid {
-    display: grid;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
-    grid-template-rows: 100px 1fr 150px;
-    grid-template-columns: auto;
-    height: 100vh;
-}
-
 h1{
     margin: auto;
     display: inline-block;
@@ -26,43 +15,15 @@ h1{
 }
 
 header{
-    grid-area: header;
     background-color: black;
-    color: aliceblue;
-    position: relative;
-    height: 120px;
+    height: 150px;
 }
-#inicioBlanco{
-    color: white;
-}
-#remerasBlanco{
-    color: white;
-}
-#buzosBlanco{
-    color: white;
-}
-#pedidosBlanco{
-    color: white;
-}
-#tallesBlanco{
+#blanco{
     color: white;
 }
 
-.logo{
-    margin-top: 10;
-    width: 180px;
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    
-}
 
-.navHeader{
-    display: none;
-    text-align: right;
- 
-}
-.navHeader ul li a{
+.navbar li a{
     color: hotpink;
     text-decoration: none;
     font-size: 22px;
@@ -79,78 +40,17 @@ ul{
     list-style-type: none;
 }
    
-.navHeader ul li{
-    display: inline-block;
-    position: relative;
-    margin: 15px;                
+.navbar ul li{
+    display: inline-block;              
     background-color: rgb(0, 0, 0);
     font-size: larger;
       
 }
 
-.lineas {
-    position: relative;
-    margin-top: 40px;
-}
-
-.linea1 {
-    height: 2px;
-    padding: 2px;
-    background-color: #1E3A80;
-    position: relative;
-    width: 100%;
-
-}
-
-.linea2 {
-    height: 2px;
-    padding: 2px;
-    background-color: #f41111;
-    position: relative;
-    width: 100%;
-
-}
-
-.linea3 {
-    height: 2px;
-    padding: 2px;
-    background-color: #ff56ee;
-    position: relative;
-    width: 100%;
-
-}
-
-.linea4 {
-    height: 2px;
-    padding: 2px;
-    background-color: #15b512;
-    position: relative;
-    width: 100%;
-}
-
-.linea5 {
-    height: 2px;
-    padding: 2px;
-    background-color: #0dc9f2;
-    position: relative;
-    width: 100%;
-
-}
-
-.linea6 {
-    height: 2px;
-    padding: 2px;
-    background-color: #eef20d;
-    position: relative;
-    width: 100%;
-}
-
 
              /*MAIN*/
 
-main{
-    grid-area: main;
-}
+
 
 .subtitulo {
     margin: 20px;
@@ -161,17 +61,6 @@ main{
 
 }
 
-.lineaGris {
-    background-color: rgb(196, 193, 193);
-    padding: 1px;
-}
-
-.lineaGris2 {
-    background-color: rgb(196, 193, 193);
-    padding: 1px;
-    margin-bottom: 50px;
-}
-
 .imagen:hover {
     transform: rotateX(10deg);
 }
@@ -179,8 +68,8 @@ main{
 .contenedor {
     display: flex;
     flex-wrap: wrap;
-    margin: 50px;
     justify-content: space-between;
+    padding: 100px;
 }
 
 .imagen {
@@ -316,12 +205,10 @@ main{
     font-size: 20px;
 }
 
-.colorFondo{
-    background-color: rgb(250, 200, 215);
-}
+
 .h3Pedidos{
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
     margin-top: 80px;
     color: rgb(56, 56, 56);
 }
@@ -355,67 +242,44 @@ border-radius: 200px;
         /*------------------FOOTER--------------------*/ 
 
 .footer {
-    grid-area: footer;
     background-color: black;
     display: flex;
-
-   
+  
 }
 
-.divFooter{
-    padding: 18px 60px;
-    line-height: 35px;
-}
-.divFooter a {
-    color: hotpink;
+.redesociales{
+    display: flex;
+    justify-content: space-between;
+
+
 }
 
-.divFooter span {
-    color: hotpink;
-}
 
 #contacto{
+
     color: rgb(240, 221, 221);
-    font-size: 25px;
-    padding: 40px;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
 }
 
-@media screen and (max-widht: 599px) {}
+.pagosFooter{
+    justify-content: center;
+    text-align: center;
+    color: beige;
+    font-size: 20px;
+
+}
+
+.logoFooter{
+    width: 200px;
+    justify-content: center;
+}
 
 /*-------------- TABLET---------------*/
 
-@media screen and (min-width: 600px) {
-    .grid {
-            display: grid;
-            grid-template-areas:
-                "header"
-                "main"
-                "footer";
-            grid-template-rows: 100px 1fr 150px;
-            grid-template-columns: auto;
-            height: 100vh;
-        }
-}
+
 
 
 /*-----------------DESKTOP---------------*/
-
-@media screen and (min-width: 1200px) {
-    .grid {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "main"
-            "footer";
-        grid-template-rows: 100px 1fr 150px;
-        grid-template-columns: auto;
-        height: 100vh;
-    }
-
-.navHeader{
-    display: flex;
-    position: relative;
-    justify-content: end;
-}
-
-}
