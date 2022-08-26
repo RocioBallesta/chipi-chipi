@@ -97,6 +97,14 @@ ul{
     padding: 20px;
 }
 
+.imagen:hover {
+    transform: rotateY(10deg);
+
+}
+.imagen2:hover{
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, .4);
+    transform: translateY(-3%);
+}
 .imagen2{
    
     width: 300px;
@@ -134,6 +142,10 @@ ul{
         
 }
 
+.imagen3:hover {
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, .4);
+    transform: translateY(-3%);
+}
 
 .descripcion{
     font-size: 18px;
@@ -248,6 +260,7 @@ border-radius: 200px;
 
 .redesociales{
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
 
