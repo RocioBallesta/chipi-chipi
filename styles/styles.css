@@ -9,14 +9,13 @@
 
 /*HEADER*/
 h1{
-    margin: auto;
     display: inline-block;
     
 }
 
 header{
     background-color: black;
-    height: 150px;
+
 }
 #blanco{
     color: white;
@@ -26,7 +25,7 @@ header{
 .navbar li a{
     color: hotpink;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 30px;
     transition: color 0.5s;
         
 }
@@ -44,49 +43,61 @@ ul{
     display: inline-block;              
     background-color: rgb(0, 0, 0);
     font-size: larger;
-      
+
+        
+}
+
+#navBarnav{
+    text-decoration: center;
 }
 
 
              /*MAIN*/
 
+.h1Foto{
+    font-size: 60px;
+    text-shadow: 3px 0 0 rgb(74, 109, 114);
+}
+
+
+.carousel-item{
+    max-height: 35rem;
+    margin-top: 2rem;
+}
+
 
 .subtitulo {
-    margin: 20px;
-    padding: 20px;
-    position: relative;
-    left: 30%;
-    font-size: 60px;
+    text-align: center;
+    margin: 50px;
+    
+}
 
+.h1sub{
+    font-size: 40px;
 }
 
 .imagen:hover {
     transform: rotateX(10deg);
 }
 
-.contenedor {
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 100px;
+
 }
 
 .imagen {
+
     width: 400px;
-    margin: 20px;
     border-radius: 10px;
     box-shadow: 0px 1px 10px rgb(0, 0, 0, 0.2);
     overflow: hidden;
+    margin: 20px;
+
 
 }
-.h2Index {
-    display: flex;
-    justify-content: space-around;
-    font-size: 20px;
-    padding: 70px;
-    background-color: #eef20d;
 
-} 
 
 /*-------------REMERAS---------*/
 .divremera{
@@ -94,7 +105,7 @@ ul{
     flex-wrap: wrap;
     margin: 100px;
     justify-content: space-between;
-    padding: 20px;
+
 }
 
 .imagen:hover {
@@ -127,13 +138,14 @@ ul{
     margin-top: 80px;
     padding: 40px;
     background-color: #eef20d;
-
-    
+    width: 100%;
+   
 }
 
 /*----------------BUZO-----------*/
 
 .imagen3{
+    
     width: 300px;
     margin: 100px;
     border-radius: 10px;
@@ -142,10 +154,19 @@ ul{
         
 }
 
+<<<<<<< HEAD
 .imagen3:hover {
     box-shadow: 5px 10px 5px rgba(0, 0, 0, .4);
     transform: translateY(-3%);
 }
+=======
+.divBuzo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+>>>>>>> bootstrap
 
 .descripcion{
     font-size: 18px;
@@ -157,10 +178,10 @@ ul{
     display: flex;
     justify-content: space-around;
     font-size: 22px;
-    margin-top: 80px;
+    margin-top: 50px;
     padding: 40px;
     background-color: #eef20d;
-
+    width: 100%;
 }
 
 #hover:hover{
@@ -216,18 +237,19 @@ ul{
     font-size: 20px;
 }
 
+/*------------------pedidos--------------------*/
 
 .h3Pedidos{
     text-align: center;
     font-size: 60px;
-    margin-top: 80px;
+    margin-top: 100px;
     color: rgb(56, 56, 56);
 }
 
 .remeras{
 display: flex;
 justify-content: space-around;
-margin: 100px;
+
 border-radius: 200px;
 
 }
@@ -235,7 +257,7 @@ border-radius: 200px;
 .talles{
     display: flex;
     flex-wrap: wrap;
-    margin: 100px;
+    padding: 100px;
     justify-content: space-between;
    
 }
@@ -260,9 +282,14 @@ border-radius: 200px;
 
 .redesociales{
     display: flex;
+<<<<<<< HEAD
     align-items: center;
     justify-content: space-between;
 
+=======
+    justify-content: space-evenly;
+    
+>>>>>>> bootstrap
 
 }
 
@@ -294,4 +321,13 @@ border-radius: 200px;
 
 
 
-/*-----------------DESKTOP---------------*/
+/*-----------------MOBIL---------------*/
+@media screen and (max-width: 768px) {
+    .h1sub {
+            font-size: 30px;
+
+                }
+        .h1Foto {
+            font-size: 40px;
+        }
+} 
