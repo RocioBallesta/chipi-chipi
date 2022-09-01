@@ -1,0 +1,27 @@
+.talles {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px;
+    justify-content: space-between;
+
+}
+
+.h2Talles {
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    margin-top: 80px;
+    padding: 40px;
+    background-image: linear-gradient(rgb(122, 5, 151), rgb(241, 82, 207));
+    color: white;
+
+}
+
+@media screen and (max-width: 768px) {
+    .h2Talles{
+        display: block;
+        text-align: center;
+
+    }
+
+}

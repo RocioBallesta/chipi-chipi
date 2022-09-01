@@ -1,0 +1,38 @@
+.footer {
+    background-color: black;
+    display: flex;
+}
+
+.redesociales {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+#contacto {
+    color: rgb(240, 221, 221);
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+.pagosFooter {
+    justify-content: center;
+    text-align: center;
+    color: beige;
+    font-size: 20px;
+}
+
+.logoFooter {
+    width: 200px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .logoFooter {
+      width: 150px;
+
+    }
+
+}
