@@ -1,12 +1,9 @@
 .divremera {
     display: flex;
     flex-wrap: wrap;
-    margin: 100px;
-    justify-content: space-between;
-}
-
-.imagen2 {
-    width: 300px;
+    margin: 10px;
+    justify-content: space-evenly;
+    .imagen2 {
     border-radius: 10px;
     box-shadow: 0px 1px 10px rgb(0, 0, 0, 0.2);
     overflow: hidden;
@@ -22,28 +19,25 @@
 #hover:hover {
     font-size: 32px;
 } 
+}
 
 .h2Remeras {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-size: 30px;
     margin-top: 80px;
     padding: 40px;
     background-image: linear-gradient(rgb(122, 5, 151), rgb(241, 82, 207));
     width: 100%;
-    color: white;
+    color: #ffffff;
 }
 
-.remeras {
-    display: flex;
-    justify-content: space-around;
-    border-radius: 200px;
-}
 
 @media screen and (max-width: 768px){
     .h2Remeras{
         display: block;
         text-align: center;
+        font-size: 20px;
     
     }
 

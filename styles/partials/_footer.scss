@@ -10,7 +10,7 @@
 
 
 #contacto {
-    color: rgb(240, 221, 221);
+    color: map-get($color, h2-color);
     font-size: 35px;
     text-align: center;
     padding: 10px;
@@ -20,7 +20,7 @@
 .pagosFooter {
     justify-content: center;
     text-align: center;
-    color: beige;
+    color: map-get($color, h2-color);
     font-size: 20px;
 }
 
