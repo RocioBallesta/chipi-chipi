@@ -1,8 +1,18 @@
+.divBuzo .imagen3, .divremera .imagen2, .container .imagen {
+  background-color: rgb(252, 252, 252);
+  margin: 60px;
+  border-radius: 20px;
+}
+.divBuzo .imagen3:hover, .divremera .imagen2:hover, .container .imagen:hover {
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3%);
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI";
 }
 
 header {
@@ -39,45 +49,36 @@ header .navbar ul li a:hover {
           text-decoration: center;
 }
 
-.h1Foto {
-  font-size: 60px;
-  text-shadow: 3px 0 0 rgb(74, 109, 114);
-}
-
 .carousel-item {
   max-height: 35rem;
   margin-top: 2rem;
+}
+.carousel-item .h1Foto {
+  font-size: 60px;
+  text-shadow: 3px 0 0 rgb(74, 109, 114);
 }
 
 .subtitulo {
   text-align: center;
   margin: 50px;
 }
-
-.h1sub {
+.subtitulo .h1sub {
   font-size: 40px;
-}
-
-.imagen:hover {
-  transform: rotateX(10deg);
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
-}
-
-.imagen {
-  width: 400px;
-  border-radius: 10px;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  margin: 20px;
-}
-.imagen img {
+  justify-content: space-between;
   width: 100%;
+  margin: auto;
+}
+.container .imagen img {
+  border-radius: 10px;
+  overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -91,23 +92,17 @@ header .navbar ul li a:hover {
 .divremera {
   display: flex;
   flex-wrap: wrap;
-  margin: 10px;
   justify-content: space-between;
+  width: 100%;
+  margin: auto;
 }
-
-.imagen2 {
+.divremera .imagen2 img {
   width: 300px;
+  height: 400px;
   border-radius: 10px;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  margin: 20px;
-}
-.imagen2 p {
-  text-align: center;
-}
-.imagen2:hover {
-  box-shadow: 0px 1px 2px rgb(0, 0, 0);
-  transform: translateY(-3%);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #hover:hover {
@@ -116,49 +111,41 @@ header .navbar ul li a:hover {
 
 .h2Remeras {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   font-size: 30px;
   margin-top: 80px;
   padding: 40px;
   background-image: linear-gradient(rgb(122, 5, 151), rgb(241, 82, 207));
   width: 100%;
-  color: white;
-}
-
-.remeras {
-  display: flex;
-  justify-content: space-around;
-  border-radius: 200px;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 768px) {
   .h2Remeras {
     display: block;
-    text-align: left;
+    text-align: center;
     font-size: 20px;
   }
 }
-.imagen3 {
-  width: 300px;
-  margin: 100px;
-  border-radius: 10px;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-}
-.imagen3:hover {
-  box-shadow: 0px 1px 2px rgb(0, 0, 0);
-  transform: translateY(-3%);
-}
-
 .divBuzo {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
+  margin: auto;
+}
+.divBuzo .imagen3 img {
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .descripcion {
   font-size: 18px;
-  font-weight: 600;
   text-align: center;
 }
 
@@ -186,8 +173,12 @@ header .navbar ul li a:hover {
 .talles {
   display: flex;
   flex-wrap: wrap;
-  padding: 100px;
   justify-content: space-between;
+  width: 100%;
+  margin: 30px;
+}
+.talles img {
+  border-radius: 20px;
 }
 
 .h2Talles {
@@ -268,7 +259,7 @@ header .navbar ul li a:hover {
 }
 
 #contacto {
-  color: rgb(240, 221, 221);
+  color: #ffffff;
   font-size: 35px;
   text-align: center;
   padding: 10px;
@@ -278,7 +269,7 @@ header .navbar ul li a:hover {
 .pagosFooter {
   justify-content: center;
   text-align: center;
-  color: rgb(240, 221, 221);
+  color: #ffffff;
   font-size: 20px;
 }
 

@@ -1,9 +1,9 @@
 .talles {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 100px;
-    justify-content: space-between;
-
+@include flex($justify: space-between, $widht: 100%, $margin: 30px);
+    img {
+        border-radius: 20px;
+          
+    }
 }
 
 .h2Talles {

@@ -1,25 +1,22 @@
 .divremera {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px;
-    justify-content: space-evenly;
-    .imagen2 {
-    border-radius: 10px;
-    box-shadow: 0px 1px 10px rgb(0, 0, 0, 0.2);
-    overflow: hidden;
-    margin: 20px;
-    p {
-        text-align: center;
-    }
-    &:hover{
-        box-shadow: 0px 1px 2px rgba(0, 0, 0, 1);
-        transform: translateY(-3%);
+    @include flex($justify: space-between, $widht: 100%, $margin: auto);
+.imagen2 {
+        @extend %cards;
+
+        img {
+            width: 300px;
+            height: 400px;
+            border-radius: 10px;
+            overflow: hidden;
+            object-fit: cover;
+        }
     }
 }
+    
 #hover:hover {
     font-size: 32px;
 } 
-}
+
 
 .h2Remeras {
     display: flex;
