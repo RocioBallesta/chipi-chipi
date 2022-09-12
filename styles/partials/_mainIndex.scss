@@ -1,0 +1,48 @@
+
+.carousel-item {
+    max-height: 35rem;
+    margin-top: 2rem;
+
+    .h1Foto {
+            font-size: 60px;
+            text-shadow: 3px 0 0 rgb(74, 109, 114);
+        }
+}
+
+
+.subtitulo {
+    text-align: center;
+    margin: 50px;
+    .h1sub {
+            font-size: 40px;
+        }
+}
+
+.container {
+    @include flex($justify: space-between, $widht: 100%, $margin:auto);
+
+    .imagen {
+    @extend %cards;
+
+    img {
+        border-radius: 10px;
+        overflow: hidden;
+        object-fit: cover;
+        width: 100%;
+   
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+        .h1sub {
+            font-size: 30px;
+
+        }
+
+        .h1Foto {
+            font-size: 40px;
+        }
+
+
+    }

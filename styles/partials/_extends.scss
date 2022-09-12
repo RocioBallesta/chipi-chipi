@@ -1,0 +1,17 @@
+%div-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        margin: auto;
+}
+
+%cards {
+    background-color: rgb(252, 252, 252);
+    margin: 60px;
+    border-radius: 20px;
+        &:hover {
+            box-shadow: 5px 10px 5px rgba(0, 0, 0, .2);
+            transform: translateY(-3%);
+        }
+}

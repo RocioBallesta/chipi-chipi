@@ -1,0 +1,45 @@
+.divBuzo {
+@include flex($justify: space-between, $widht: 100%, $margin: auto);
+
+.imagen3 {
+        @extend %cards;
+    img {
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px rgb(0, 0, 0, 0.2);
+    overflow: hidden;
+    object-fit: cover;
+     }
+   }
+}
+
+.descripcion {
+    font-size: 18px;
+    text-align: center;
+}
+
+.h2Buzos {
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    margin-top: 50px;
+    padding: 40px;
+    background-image: linear-gradient(rgb(122, 5, 151), rgb(241, 82, 207));
+    color: white;
+    width: 100%;
+    
+}
+
+#hover:hover {
+    font-size: 32px;
+}
+
+@media screen and (max-width: 768px) {
+    .h2Buzos {
+        display: block;
+        text-align: center;
+
+    }
+
+}
