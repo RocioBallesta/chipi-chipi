@@ -4,8 +4,9 @@
     margin-top: 2rem;
 
     .h1Foto {
-            font-size: 60px;
-            text-shadow: 3px 0 0 rgb(74, 109, 114);
+            font-size: 50px;
+            color: rgb(255, 255, 255);
+            text-shadow: 3px 0 0 rgb(192, 71, 156);
         }
 }
 
@@ -14,7 +15,9 @@
     text-align: center;
     margin: 50px;
     .h1sub {
-            font-size: 40px;
+            font-size: 60px;
+            color: #FF56EE;
+            text-shadow: 1px 1px 4px #888;
         }
 }
 
@@ -34,15 +37,13 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-        .h1sub {
-            font-size: 30px;
+    @media screen and (max-width:768px){
+            .subtitulo .h1sub {
+                 font-size: 40px;
+                     }
 
-        }
-
-        .h1Foto {
-            font-size: 40px;
-        }
-
-
-    }
+            .carousel-item .h1Foto {
+                 font-size: 26px;
+                 text-shadow: 3px 0 0 rgb(192,71,156);
+                        }
+            }

@@ -54,8 +54,9 @@ header .navbar ul li a:hover {
   margin-top: 2rem;
 }
 .carousel-item .h1Foto {
-  font-size: 60px;
-  text-shadow: 3px 0 0 rgb(74, 109, 114);
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 0 0 rgb(192, 71, 156);
 }
 
 .subtitulo {
@@ -63,7 +64,9 @@ header .navbar ul li a:hover {
   margin: 50px;
 }
 .subtitulo .h1sub {
-  font-size: 40px;
+  font-size: 60px;
+  color: #FF56EE;
+  text-shadow: 1px 1px 4px #888;
 }
 
 .container {
@@ -82,11 +85,12 @@ header .navbar ul li a:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .h1sub {
-    font-size: 30px;
-  }
-  .h1Foto {
+  .subtitulo .h1sub {
     font-size: 40px;
+  }
+  .carousel-item .h1Foto {
+    font-size: 26px;
+    text-shadow: 3px 0 0 rgb(192, 71, 156);
   }
 }
 .divremera {
@@ -124,7 +128,7 @@ header .navbar ul li a:hover {
   .h2Remeras {
     display: block;
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 .divBuzo {
@@ -168,14 +172,19 @@ header .navbar ul li a:hover {
   .h2Buzos {
     display: block;
     text-align: center;
+    font-size: 25px;
   }
 }
-.talles {
+.contenedor-talles {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: auto;
+}
+.contenedor-talles .talles {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  border-radius: 15px;
 }
 
 .h2Talles {
@@ -192,7 +201,11 @@ header .navbar ul li a:hover {
   .h2Talles {
     display: block;
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
+  }
+  .contenedor-talles {
+    display: block;
+    justify-content: center;
   }
 }
 .formulario {
@@ -221,7 +234,6 @@ header .navbar ul li a:hover {
 .form1 {
   width: 100%;
   height: 120px;
-  margin: 5px;
   margin-bottom: 20px;
   padding: 10px;
   border: 3px solid;
@@ -238,11 +250,15 @@ header .navbar ul li a:hover {
   font-size: 20px;
 }
 
-.h2Pedidos {
+.pedidos {
   text-align: center;
-  font-size: 60px;
-  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
   color: rgb(56, 56, 56);
+}
+.pedidos .h1pedido {
+  color: #FF56EE;
+  text-shadow: 1px 1px 4px #888;
 }
 
 .footer {
